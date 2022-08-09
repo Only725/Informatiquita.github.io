@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+      h1{
+          font-family: geneva;
+          background-color: rgb(239, 231, 222);
+      }
+      h2{
+        font-family: geneva;
+      }
+      p{
+           font-family: geneva;
+        }
+    </style>
+</head>
+<body style="background-color:powderblue;">
+    <h1><center>FORMULARIO ACERCA DE LA PROGRAMACIÓN</center></h1>
+    <h2>Formulario acerca de la programación.</h2>
+    
+
+    <a href="index.html">Ir a Inicio</a>
+    <form action="/action_page.php">
+        <fieldset>
+        Nombre de usuario:<br>
+        <input type="text" name="username" maxlength="10" autofocus autocomplete="on" required
+        ><br>
+        Contraseña:<br>
+        <input type="password" name="psw" maxlength="10" required><br>
+        Nombre:<br>
+        <input type="text" name="firstname"maxlength="15"autocomplete="on" required><br>
+        Apellidos:<br>
+        <input type="text" name="lastname"maxlength="15" required><br><br>
+        <input type="radio" name="gender" value="male" checked  required> Hombre<br>
+        <input type="radio" name="gender" value="female" required> Mujer<br>
+        <input type="radio" name="gender" value="other" required> Otro<br>
+        Selecciona tu color favorito:
+        <input type="color" name="favcolor" required><br><br>
+        Tu cumpleaños:
+            <input type="date" name="birthday" max="99" min="0" required><br>
+           <br>
+            ¿Cuando te registraste? (fecha y hora):
+            <input type="datetime-local" name="daytime" required><br><br>
+            Correo electrónico:
+            <input type="email" name="email" required><br><br>
+            Selecciona un fichero: <input type="file" name="myFile" ><br><br>
+            Mes y año:
+            <input type="month" name="monthYear" required><br>
+            <br>
+            Que tanto sabes de programación:
+            <br>
+            <input id="poco" type="radio" name="poco"
+            value="poco">
+            <label for="poco">poco</label>   
+            <br>
+            <input id="regular" type="radio" name="regular"
+            value="Green">
+            <label for="regular">regular</label>
+            <br>
+            <input id="mucho" type="radio" name="mucho"
+            value="mucho">
+            <label for="mucho">mucho</label><br><br>
+            Cuáles de los siguientes lenguajes de programación conoces:<br>
+            <label for="Java">Java</label>
+            <input id="Java"type="checkbox" name="Java" value="Java"><br>
+            <label for="Javascript">Javascript</label>
+            <input id="Javascript"type="checkbox" 
+            <input id="python"type="checkbox" name="python" value="python"><br><label for="python">pthon</label>
+            <input id="c/c++"type="checkbox" name="c/c++" value="c/c++"><br><label for="c/c++">c/c++</label>
+            <input id="c#"type="checkbox" name="c#" value="c#"><br><label for="c#">c#</label>
+            <input id="Kotlin"type="checkbox" name="Kotlin" value="Kotlin"><br><label for="Kotlin">Kotlin</label>
+            <input id="Swift"type="checkbox" name="Swift" value="Swift"><br><label for="Swift">Swift</label>
+            <input id="PHP"type="checkbox" name="PHP" value="PHP"><br><label for="PHP">PHP</label>
+            
+
+
+
+
+
+
+
+
+
+
+
+
+            <br><br>
+
+        <input type="reset">
+        <input type="submit" value="Enviar">
+        </fieldset>
+     </form>
+    
+    
+</body>
+</html>
